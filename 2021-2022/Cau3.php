@@ -99,7 +99,7 @@
                     location.reload();
                 }
             };
-            xhr.open("POST", "updateDiemDL.php", true);
+            xhr.open("POST", "Cau4.php", true);
             xhr.send(formData);
         }
     </script>
