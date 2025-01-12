@@ -24,10 +24,10 @@ if ( empty($ngaythue)) {
 
 // Thêm xe vào bảng thuê
 $sql = "INSERT INTO THUE (MAKH, SOXE, NGAYTHUE, NGAYTRA) VALUES ('$makh', '$maxe', '$ngaythue', '$ngaytra')";
-if ($conn->query($sql) === TRUE) {
+if ($conn->query($sql)) {
     // Cập nhật tình trạng xe
     $sql = "UPDATE XE SET TINHTRANG = 1 WHERE SOXE = '$maxe'";
-    if ($conn->query($sql) === TRUE) {
+    if ($conn->query($sql)) {
         // Lấy thông tin xe để hiển thị
         $sql = "SELECT SOXE, TENXE, HANGXE, NAMSX, SOCHO, DGTHUE FROM XE WHERE SOXE = '$maxe'";
         $result = $conn->query($sql);

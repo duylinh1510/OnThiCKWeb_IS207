@@ -28,6 +28,8 @@
                     ON bh.mabaihat = pb.mabaihat
                     GROUP BY bh.MaBaiHat, bh.TenBaiHat
                     ORDER BY SoLanXuatHien DESC LIMIT 10";
+
+                    
             $result = $conn->query($sql);
             if($result->num_rows>0){
                 $stt=1;

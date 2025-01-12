@@ -26,6 +26,8 @@
             JOIN CaSi_BaiHAT CB ON CS.MaCaSi = CB.MaCaSi
             GROUP BY CS.TenCaSi,CS.MaCaSi   
             HAVING COUNT(CB.MaBaiHat) = (Select Count(*) From BaiHat)";
+
+            
             $result = $conn->query($sql);
             if($result->num_rows>0){
                 $stt=1;
