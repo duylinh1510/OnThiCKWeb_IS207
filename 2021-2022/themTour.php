@@ -16,6 +16,8 @@
     $sodem = $_POST['sodem'];
     $gia = $_POST['gia'];
     $sql = "INSERT INTO TOUR(MaTour,TenTour,NgayKhoiHanh,SoNgay,SoDem,Gia) VALUES ('$matour', '$tentour', '$ngaykhoihanh', '$songay', '$sodem', '$gia')";
-    $conn->query($sql);
+    if($conn->query($sql)){
+        echo "Successfully!";
+    }
     $conn->close();
 ?>

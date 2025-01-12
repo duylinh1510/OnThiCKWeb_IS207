@@ -26,6 +26,7 @@
     <input type="text" name = "gia" placeholder="3000000">
     <br>
     <button>Thêm</button>
+    
 </form>
 </body>
 </html>
